@@ -1,0 +1,46 @@
+$primary: #e22d3f;
+$primary-btn: #0098ad;
+$secondary: green;
+// IMPORTAMOS MÓDULOS
+@import "partials/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
+
+// Custom SASS
+// HEADER ITEMS
+.btn-primary {
+  background-color: $primary-btn;
+  border-color: $primary-btn;
+}
+
+.btn-primary:hover {
+  background-color: $primary;
+}
+
+.navbar .btn-primary:hover {
+  background-color: beige;
+  border-color: beige;
+  color: $primary;
+}
+
+.navbar {
+  width: 100vw;
+  background-color: $primary;
+}
+
+.navbar-light .nav-item .nav-link {
+  color: $nav-link-color;
+}
+
+.nav-link:hover {
+  color: $nav-link-color-hover;
+}
+
+.navbar-light .nav-item .nav-link .disabled {
+  color: $disabled-link;
+}
+
+.dropdown-item {
+  color: $primary;
+}
