@@ -34,12 +34,21 @@
   color: $nav-link-color-hover;
 }
 
-.navbar-light .nav-link .disabled {
-  color: $disabled-link;
+.disabled {
+  color: $disabled-link !important;
 }
 
 .dropdown-item {
   color: $primary;
+}
+
+.small-header {
+  font-size: 13px;
+  padding: 1px 3px;
+  color: $nav-link-color-hover;
+  font-weight: 700;
+  border-radius: 2px;
+  border-color: black;
 }
 
 // TABLE
@@ -65,6 +74,10 @@ tbody {
   background-color: $btn-secondary-hover;
   border-color: $btn-secondary-hover;
   color: $btn-secondary-text-hover;
+}
+
+.btn-modal {
+  color: beige;
 }
 
 // PAGINATION

@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const { watch, src, dest, parallel } = require('gulp');
+const { watch, src, dest, series } = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const CompSass = require('gulp-sass');
 
@@ -29,3 +29,5 @@ function watcherCSS(){
 exports.sass = sass;
 exports.watcher = watcherSass;
 exports.minCSS = minifyCSS;
+exports.series = series(watcherSass, watcherCSS);
+

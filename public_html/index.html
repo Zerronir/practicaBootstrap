@@ -41,7 +41,7 @@
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-warning my-2 mr-2 my-sm-0">Notificacions <span class="bg-light">9</span></button>
+            <button class="btn btn-warning my-2 mr-2 my-sm-0">Notificacions <small class="bg-light small-header">9</small></button>
             <input class="form-control mr-sm-2" type="search" placeholder="Es Liceu" aria-label="Es Liceu">
             <button class="btn btn-primary my-2 my-sm-0" type="submit">Cerca</button>
         </form>
@@ -235,7 +235,7 @@
     </nav>
 
     <!-- MODALS -->
-    <div class="modal" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true">
+    <div class="modal" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -246,10 +246,11 @@
                 </div>
                 <div class="modal-body">
                     <p>Està segur que vol esborrar l'element?</p>
+                    <small>Nota: Per tancar aquest modal ho has de fer amb els botons assignats o amb l'icona de la creu</small>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Si</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Si</button>
+                    <button type="button" class="btn btn-secondary btn-modal" data-dismiss="modal">No</button>
                 </div>
             </div>
         </div>
@@ -290,7 +291,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
+                        <button type="button" class="btn btn-secondary btn-modal" data-dismiss="modal">Tanca</button>
                         <button type="submit" class="btn btn-primary">Desar</button>
                     </div>
                 </form>

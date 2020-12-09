@@ -10011,11 +10011,19 @@ template {
 .nav-link:hover {
   color: #000; }
 
-.navbar-light .nav-link .disabled {
-  color: gray; }
+.disabled {
+  color: lightgray !important; }
 
 .dropdown-item {
   color: #e22d3f; }
+
+.small-header {
+  font-size: 13px;
+  padding: 1px 3px;
+  color: #000;
+  font-weight: 700;
+  border-radius: 2px;
+  border-color: black; }
 
 thead {
   background-color: #e5e9ec;
@@ -10035,6 +10043,9 @@ tbody {
   background-color: #e22d3f;
   border-color: #e22d3f;
   color: #606a71; }
+
+.btn-modal {
+  color: beige; }
 
 .pagination {
   color: #e22d3f; }
