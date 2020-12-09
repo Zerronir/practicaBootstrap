@@ -10011,8 +10011,30 @@ template {
 .nav-link:hover {
   color: #000; }
 
-.navbar-light .nav-item .nav-link .disabled {
+.navbar-light .nav-link .disabled {
   color: gray; }
 
 .dropdown-item {
+  color: #e22d3f; }
+
+thead {
+  background-color: #e5e9ec;
+  color: #2d3338; }
+
+tbody {
+  background-color: #2d3338;
+  color: #e5e9ec;
+  border-color: #2d3338; }
+
+.btn-secondary {
+  background-color: #606a71;
+  border-color: #606a71;
+  color: #e22d3f; }
+
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+  background-color: #e22d3f;
+  border-color: #e22d3f;
+  color: #606a71; }
+
+.pagination {
   color: #e22d3f; }

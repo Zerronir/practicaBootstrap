@@ -1,6 +1,3 @@
-$primary: #e22d3f;
-$primary-btn: #0098ad;
-$secondary: green;
 // IMPORTAMOS MÓDULOS
 @import "partials/variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -37,10 +34,40 @@ $secondary: green;
   color: $nav-link-color-hover;
 }
 
-.navbar-light .nav-item .nav-link .disabled {
+.navbar-light .nav-link .disabled {
   color: $disabled-link;
 }
 
 .dropdown-item {
+  color: $primary;
+}
+
+// TABLE
+thead {
+  background-color: $thead-bg;
+  color: $tbody-bg;
+}
+
+tbody {
+  background-color: $tbody-bg;
+  color: $thead-bg;
+  border-color: $tbody-bg;
+}
+
+// BUTTONS
+.btn-secondary {
+  background-color: $btn-secondary;
+  border-color: $btn-secondary;
+  color: $btn-secondary-text;
+}
+
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+  background-color: $btn-secondary-hover;
+  border-color: $btn-secondary-hover;
+  color: $btn-secondary-text-hover;
+}
+
+// PAGINATION
+.pagination {
   color: $primary;
 }
